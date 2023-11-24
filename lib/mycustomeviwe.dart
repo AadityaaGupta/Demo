@@ -5,6 +5,8 @@ class StarRatingView extends StatefulWidget {
   Function(String) onclickevent;
   StarRatingView(this.onclickevent, {super.key});
 
+
+
   @override
   State<StarRatingView> createState() => _StarRatingViewState();
 }
