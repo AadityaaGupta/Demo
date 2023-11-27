@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:newrepo/ApiDemo.dart';
 import 'package:newrepo/Navigation.dart';
 import 'package:newrepo/dashboard.dart';
 import 'package:newrepo/logn_page.dart';
@@ -18,7 +19,7 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
   int i=0;
   LoginPage d= new LoginPage();
-  List<String> menu=['DashBoard','User','Navigation','unknown','unknown','unknown','unknown','unknown','unknown','unknown'];
+  List<String> menu=['DashBoard','User','Navigation','Api Data','unknown','unknown','unknown','unknown','unknown','unknown'];
    
     List<UserDetails> user=[
     UserDetails(sNo:1, name:'redmi 9', deviceDetail:'4G', tokenNo:2),
@@ -95,7 +96,7 @@ class _ProfilePageState extends State<ProfilePage> {
       return Navigation();
 
       case 3 :
-      return Text('m4');
+      return ApiDemo();
 
       case 4 :
       return Text('m5');
